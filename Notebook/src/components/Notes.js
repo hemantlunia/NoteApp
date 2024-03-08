@@ -55,7 +55,7 @@ export default function Notes(props) {
 
 
             <button ref={ref} type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style={{ display: 'none' }}>
-                Launch demo modal
+                Launch...
             </button>
 
 

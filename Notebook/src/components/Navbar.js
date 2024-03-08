@@ -39,7 +39,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </nav>
-            {/* <h1>This is Navbar</h1> */}
         </>
     )
 }

@@ -4,7 +4,7 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-var fetchuser = require('../middleware/fetchuser')
+const fetchuser = require('../middleware/fetchuser')
 
 
 const JWT_SECRET = 'Hemantkumar@#$@boy';
@@ -58,7 +58,7 @@ router.post('/login', [
     body('password', 'password can not be blanked').exists()
 ], async (req, res) => {
     let success = false
-    //if there is error then return bsd request
+    //if there is error then return request
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
